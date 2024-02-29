@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Api kütüphanemizi ve script kodumuzun yolunu ekliyoruz-->
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <title>Face Recognition</title>
+  <!--Resmi ortaya konumlandırma -->
+  <!--Canvas ile resmi üst üste getiriyoruz ki yüzler belli olsun-->
+    <style>
+    
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column
+    }
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <!--Sayfaya resim yüklemek için-->
+  <input type="file" id="imageUpload">
+</body>
+</html>
